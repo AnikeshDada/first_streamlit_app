@@ -10,6 +10,7 @@ def get_fruityvice_data(this_fruit_choice):
   return fruityvice_normalized 
 
 def get_fruit_load_list():
+  streamlit.text("In fruit load list :)")
   with my_cnx_cursor() as my_cur:
     my_cur.execute("select * from pc_rivery_db.public.FRUIT_LOAD_LIST")
     return my_cur.fetchall()
