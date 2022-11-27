@@ -12,7 +12,7 @@ def get_fruityvice_data(this_fruit_choice):
 def get_fruit_load_list():
   with my_cnx_cursor() as my_cur:
     my_cur.execute("select * from pc_rivery_db.public.FRUIT_LOAD_LIST")
-    retunr my_cur.fetchall()
+    return my_cur.fetchall()
 
 streamlit.title('My Parents New Healthy Dinner')
 streamlit.header('Breakfast Menu')
