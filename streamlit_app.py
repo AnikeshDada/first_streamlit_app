@@ -17,7 +17,9 @@ df_show = df_list.loc[df_selected]
 
 streamlit.dataframe(df_show)
 
+streamlit.header("Fruityvice Fruit Advice!")
 import requests
+
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response.json())
-streamlit.header("Fruityvice Fruit Advice!")
+
